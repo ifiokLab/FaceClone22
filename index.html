@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find groups and communities to connect with | Facebook</title>
+    <link rel="icon" href="ficon.ico" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-box1" id="header-box1">
+                <a href="">
+                <img class="logo" src="logo.png" alt="">
+                </a>
+                <div class="search-card" onclick="Show_Search()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                </div>
+            </div>
+            <div class="header-box2">
+                <div class="box2-card ">
+                    <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt" fill="currentColor" height="28" width="28"><path d="M25.825 12.29C25.824 12.289 25.823 12.288 25.821 12.286L15.027 2.937C14.752 2.675 14.392 2.527 13.989 2.521 13.608 2.527 13.248 2.675 13.001 2.912L2.175 12.29C1.756 12.658 1.629 13.245 1.868 13.759 2.079 14.215 2.567 14.479 3.069 14.479L5 14.479 5 23.729C5 24.695 5.784 25.479 6.75 25.479L11 25.479C11.552 25.479 12 25.031 12 24.479L12 18.309C12 18.126 12.148 17.979 12.33 17.979L15.67 17.979C15.852 17.979 16 18.126 16 18.309L16 24.479C16 25.031 16.448 25.479 17 25.479L21.25 25.479C22.217 25.479 23 24.695 23 23.729L23 14.479 24.931 14.479C25.433 14.479 25.921 14.215 26.132 13.759 26.371 13.245 26.244 12.658 25.825 12.29"></path></svg>
+                </div>
+                <div class="box2-card">
+                    <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor" height="28" width="28"><path d="M8.75 25.25C8.336 25.25 8 24.914 8 24.5 8 24.086 8.336 23.75 8.75 23.75L19.25 23.75C19.664 23.75 20 24.086 20 24.5 20 24.914 19.664 25.25 19.25 25.25L8.75 25.25ZM17.163 12.846 12.055 15.923C11.591 16.202 11 15.869 11 15.327L11 9.172C11 8.631 11.591 8.297 12.055 8.576L17.163 11.654C17.612 11.924 17.612 12.575 17.163 12.846ZM21.75 20.25C22.992 20.25 24 19.242 24 18L24 6.5C24 5.258 22.992 4.25 21.75 4.25L6.25 4.25C5.008 4.25 4 5.258 4 6.5L4 18C4 19.242 5.008 20.25 6.25 20.25L21.75 20.25ZM21.75 21.75 6.25 21.75C4.179 21.75 2.5 20.071 2.5 18L2.5 6.5C2.5 4.429 4.179 2.75 6.25 2.75L21.75 2.75C23.821 2.75 25.5 4.429 25.5 6.5L25.5 18C25.5 20.071 23.821 21.75 21.75 21.75Z"></path></svg>
+                </div>
+                <div class="box2-card">
+                    <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor" height="28" width="28"><path d="M17.5 23.75 21.75 23.75C22.164 23.75 22.5 23.414 22.5 23L22.5 14 22.531 14C22.364 13.917 22.206 13.815 22.061 13.694L21.66 13.359C21.567 13.283 21.433 13.283 21.34 13.36L21.176 13.497C20.591 13.983 19.855 14.25 19.095 14.25L18.869 14.25C18.114 14.25 17.382 13.987 16.8 13.506L16.616 13.354C16.523 13.278 16.39 13.278 16.298 13.354L16.113 13.507C15.53 13.987 14.798 14.25 14.044 14.25L13.907 14.25C13.162 14.25 12.439 13.994 11.861 13.525L11.645 13.35C11.552 13.275 11.419 13.276 11.328 13.352L11.155 13.497C10.57 13.984 9.834 14.25 9.074 14.25L8.896 14.25C8.143 14.25 7.414 13.989 6.832 13.511L6.638 13.351C6.545 13.275 6.413 13.275 6.32 13.351L5.849 13.739C5.726 13.84 5.592 13.928 5.452 14L5.5 14 5.5 23C5.5 23.414 5.836 23.75 6.25 23.75L10.5 23.75 10.5 17.5C10.5 16.81 11.06 16.25 11.75 16.25L16.25 16.25C16.94 16.25 17.5 16.81 17.5 17.5L17.5 23.75ZM3.673 8.75 24.327 8.75C24.3 8.66 24.271 8.571 24.238 8.483L23.087 5.355C22.823 4.688 22.178 4.25 21.461 4.25L6.54 4.25C5.822 4.25 5.177 4.688 4.919 5.338L3.762 8.483C3.729 8.571 3.7 8.66 3.673 8.75ZM24.5 10.25 3.5 10.25 3.5 12C3.5 12.414 3.836 12.75 4.25 12.75L4.421 12.75C4.595 12.75 4.763 12.69 4.897 12.58L5.368 12.193C6.013 11.662 6.945 11.662 7.59 12.193L7.784 12.352C8.097 12.609 8.49 12.75 8.896 12.75L9.074 12.75C9.483 12.75 9.88 12.607 10.194 12.345L10.368 12.2C11.01 11.665 11.941 11.659 12.589 12.185L12.805 12.359C13.117 12.612 13.506 12.75 13.907 12.75L14.044 12.75C14.45 12.75 14.844 12.608 15.158 12.35L15.343 12.197C15.989 11.663 16.924 11.663 17.571 12.197L17.755 12.35C18.068 12.608 18.462 12.75 18.869 12.75L19.095 12.75C19.504 12.75 19.901 12.606 20.216 12.344L20.38 12.208C21.028 11.666 21.972 11.666 22.62 12.207L23.022 12.542C23.183 12.676 23.387 12.75 23.598 12.75 24.097 12.75 24.5 12.347 24.5 11.85L24.5 10.25ZM24 14.217 24 23C24 24.243 22.993 25.25 21.75 25.25L6.25 25.25C5.007 25.25 4 24.243 4 23L4 14.236C2.875 14.112 2 13.158 2 12L2 9.951C2 9.272 2.12 8.6 2.354 7.964L3.518 4.802C4.01 3.563 5.207 2.75 6.54 2.75L21.461 2.75C22.793 2.75 23.99 3.563 24.488 4.819L25.646 7.964C25.88 8.6 26 9.272 26 9.951L26 11.85C26 13.039 25.135 14.026 24 14.217ZM16 23.75 16 17.75 12 17.75 12 23.75 16 23.75Z"></path></svg>
+                </div>
+                <div class="box2-card menu">
+                    <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor" height="28" width="28"><path d="M25.5 14C25.5 7.649 20.351 2.5 14 2.5 7.649 2.5 2.5 7.649 2.5 14 2.5 20.351 7.649 25.5 14 25.5 20.351 25.5 25.5 20.351 25.5 14ZM27 14C27 21.18 21.18 27 14 27 6.82 27 1 21.18 1 14 1 6.82 6.82 1 14 1 21.18 1 27 6.82 27 14ZM7.479 14 7.631 14C7.933 14 8.102 14.338 7.934 14.591 7.334 15.491 6.983 16.568 6.983 17.724L6.983 18.221C6.983 18.342 6.99 18.461 7.004 18.578 7.03 18.802 6.862 19 6.637 19L6.123 19C5.228 19 4.5 18.25 4.5 17.327 4.5 15.492 5.727 14 7.479 14ZM20.521 14C22.274 14 23.5 15.492 23.5 17.327 23.5 18.25 22.772 19 21.878 19L21.364 19C21.139 19 20.97 18.802 20.997 18.578 21.01 18.461 21.017 18.342 21.017 18.221L21.017 17.724C21.017 16.568 20.667 15.491 20.067 14.591 19.899 14.338 20.067 14 20.369 14L20.521 14ZM8.25 13C7.147 13 6.25 11.991 6.25 10.75 6.25 9.384 7.035 8.5 8.25 8.5 9.465 8.5 10.25 9.384 10.25 10.75 10.25 11.991 9.353 13 8.25 13ZM19.75 13C18.647 13 17.75 11.991 17.75 10.75 17.75 9.384 18.535 8.5 19.75 8.5 20.965 8.5 21.75 9.384 21.75 10.75 21.75 11.991 20.853 13 19.75 13ZM15.172 13.5C17.558 13.5 19.5 15.395 19.5 17.724L19.5 18.221C19.5 19.202 18.683 20 17.677 20L10.323 20C9.317 20 8.5 19.202 8.5 18.221L8.5 17.724C8.5 15.395 10.441 13.5 12.828 13.5L15.172 13.5ZM16.75 9C16.75 10.655 15.517 12 14 12 12.484 12 11.25 10.655 11.25 9 11.25 7.15 12.304 6 14 6 15.697 6 16.75 7.15 16.75 9Z"></path></svg>
+                </div>
+                <div class="box2-card game-box">
+                    <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor" height="28" width="28"><path d="M23.5 9.5H10.25a.75.75 0 00-.75.75v7c0 .414.336.75.75.75H17v5.5H4.5v-19h19v5zm0 14h-5v-6.25a.75.75 0 00-.75-.75H11V11h12.5v12.5zm1.5.25V4.25C25 3.561 24.439 3 23.75 3H4.25C3.561 3 3 3.561 3 4.25v19.5c0 .689.561 1.25 1.25 1.25h19.5c.689 0 1.25-.561 1.25-1.25z"></path></svg>
+                </div>
+                <div class="box2-card menu-bar" >
+                    <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor" height="28" width="28"><path d="M23.5 4a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19zm0 18a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19zm0-9a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19z"></path></svg>
+                </div>
+                
+            </div>
+            <div class="header-box3">
+                <div class="box3-card menu-icon" id="menu-icon" onclick="menu_tab()">
+                    <svg fill="currentColor" viewBox="0 0 44 44" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 x1qx5ct2 xw4jnvo"><circle cx="7" cy="7" r="6"></circle><circle cx="22" cy="7" r="6"></circle><circle cx="37" cy="7" r="6"></circle><circle cx="7" cy="22" r="6"></circle><circle cx="22" cy="22" r="6"></circle><circle cx="37" cy="22" r="6"></circle><circle cx="7" cy="37" r="6"></circle><circle cx="22" cy="37" r="6"></circle><circle cx="37" cy="37" r="6"></circle></svg>
+                </div>
+                <div class="box3-card plus-icon">
+                    <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><g fill-rule="nonzero"><path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z" transform="translate(354.5 159.5)"></path><path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z" transform="translate(354.5 159.5)"></path></g></g></svg>
+                </div>
+                <div class="box3-card" id="msg-tab" onclick="msg_tab()">
+                    <svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0" fill="currentColor" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path></svg>
+                </div>
+                <div class="box3-card" id="not-tab" onclick="not_tab()">
+                    <svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0" fill="currentColor" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
+                </div>
+                <div class="profile" onclick="profile_tab()">
+                    <img src="gg.jpg" id="profile-tab" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="search-menu" id="search-menu">
+            <div class="search-card1">
+                <div class="arrow" onclick="Hide_Search()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="input-wrapper" >
+                    <input  type="text" placeholder="Search Facebook">
+                </div>
+            </div>
+
+            <div class="search-card2">
+                <div class="recent-card">
+                    <div>Recent searches</div>
+                   <a href="">Edit</a>
+                </div>
+                <div class="recent-card2">
+                    <div class="recent-box">
+                        <img src="gg.jpg" alt="">
+                       <div class="recent-title">Ben Edet</div>
+                    </div>
+                   <a href="">
+                    <i class="fa-solid fa-xmark"></i>
+                   </a>
+                </div>
+
+                <div class="recent-card2">
+                    <div class="recent-box">
+                        <img src="rr.jpg" alt="">
+                       <div class="recent-title">Christiano Ronaldo</div>
+                    </div>
+                   <a href="">
+                    <i class="fa-solid fa-xmark"></i>
+                   </a>
+                </div>
+
+                <div class="recent-card2">
+                    <div class="recent-box">
+                        <img src="uu.jpg" alt="">
+                       <div class="recent-title">Upwork</div>
+                    </div>
+                   <a href="">
+                    <i class="fa-solid fa-xmark"></i>
+                   </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="menu-tab" id="menu-tab">
+            <div class="menu-tab-container">
+                <div class="menu-header">
+                    <span>Menu</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card1">
+                        <div class="search-tab">
+                            <div class="search-tab-card">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Search Facebook">
+                            </div>
+                        </div>
+
+                        <div class="social-tab">
+                            <div class="social-title">Social</div>
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="event.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Events</div>
+                                    <div class="text-title2">Organize or find events and other things to do online and nearby.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="friends.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Friends</div>
+                                    <div class="text-title2">Search for friends or people you may know.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="groups.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Groups</div>
+                                    <div class="text-title2">Connect with people who share your interests.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="news.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">News Feed</div>
+                                    <div class="text-title2">See relevant posts from people and Pages you follow.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="recent.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Most Recent</div>
+                                    <div class="text-title2">See the most recent posts from your friends, groups, Pages and more.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="pages.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Pages</div>
+                                    <div class="text-title2">Discover and connect with businesses on Facebook.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-tab">
+                            <div class="social-title">Entertainment</div>
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="gaming-videos.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Gaming Videos</div>
+                                    <div class="text-title2">Watch and connect with your favorite games and streamers.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="play-games.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Play Games</div>
+                                    <div class="text-title2">Play your favorite games.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="watch.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Watch</div>
+                                    <div class="text-title2">A video destination personalized to your interests and connections.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="live.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Live Videos</div>
+                                    <div class="text-title2">Watch popular live videos from around the world.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="recent.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Most Recent</div>
+                                    <div class="text-title2">See the most recent posts from your friends, groups, Pages and more.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="pages.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Pages</div>
+                                    <div class="text-title2">Discover and connect with businesses on Facebook.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-tab">
+                            <div class="social-title">Shopping</div>
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="facebook-pay.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Facebook Pay</div>
+                                    <div class="text-title2">A seamless, secure way to pay on the apps you already use.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="marketplace.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Market Place</div>
+                                    <div class="text-title2">Buy and sell in your community.</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="social-tab">
+                            <div class="social-title">Personal</div>
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="recent-ad.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Recent ad activity</div>
+                                    <div class="text-title2">See all the ads you interacted with on Facebook.</div>
+                                </div>
+                            </div>
+                           
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="memories.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Memories</div>
+                                    <div class="text-title2">Browse your old photos, videos and posts on Facebook.</div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="saved.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Saved</div>
+                                    <div class="text-title2">Find posts, photos and videos that you saved for later.</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="social-tab">
+                            <div class="social-title">Professional</div>
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="bars.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Ads Manager</div>
+                                    <div class="text-title2">Create, manage and track the performance of your ads.</div>
+                                </div>
+                            </div>
+                           
+                           
+                          
+
+                        </div>
+
+                        <div class="social-tab">
+                            <div class="social-title">Community Resources</div>
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="climate.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Climate Science Center</div>
+                                    <div class="text-title2">Learn about climate change and its effects.</div>
+                                </div>
+                            </div>
+                           
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="covid.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">COVID-19 Information Center</div>
+                                    <div class="text-title2">See the latest prevention tips, community resources and updates from health organizations.</div>
+                                </div>
+                            </div>
+        
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="crisis.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title"> Crisis response</div>
+                                    <div class="text-title2">Find the latest updates for recent crises happening around the world.</div>
+                                </div>
+                            </div>
+                           
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="emotional.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Emotional Health</div>
+                                    <div class="text-title2"></div>
+                                </div>
+                            </div>
+
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="fund-raiser.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Fundraisers</div>
+                                    <div class="text-title2">Donate and raise money for nonprofits and personal causes.</div>
+                                </div>
+                            </div>
+                          
+
+                        </div>
+
+                        <div class="social-tab">
+                            <div class="social-title">More from Meta</div>
+                            <div class="social-menu">
+                                <div class="social-icon">
+                                    <img src="messenger.png" alt="">
+                                </div>
+                                <div class="social-text-card">
+                                    <div class="text-title">Messenger Kids</div>
+                                    <div class="text-title2">Let kids message with close friends and family.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="menu-card2">
+                        <div class="menu2-header">
+                            <span>Create</span>
+                        </div>
+                        
+                        <div class="menu2-container">
+                            <div class="post-card">
+                               <div class="post-icon"> <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/89qWuy7Wq1R.png?_nc_eui2=AeGzje-_HVAjUFPzry706eZ_lVZpnGX7XEyVVmmcZftcTF12TgIGNfGwuUit3cZkd-Nr8D0L8TW-kM40FfqF3-4Z&quot;); background-position: 0px -503px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                                <div class="post-text">Post</div>
+                            </div>
+
+                            <div class="post-card">
+                                <div class="post-icon"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/JdtNTQIgGvO.png?_nc_eui2=AeFwrd0FxZfvIwvsu7cVhTGJA5SeX0sgASoDlJ5fSyABKuOpQrbe7TrqMBu8p2WBiBBk7bqWeugmhp3a4iQoq8KT&quot;); background-position: 0px -689px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                                <div class="post-text">Story</div>
+                             </div>
+
+                             <div class="post-card">
+                                <div class="post-icon"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/89qWuy7Wq1R.png?_nc_eui2=AeGzje-_HVAjUFPzry706eZ_lVZpnGX7XEyVVmmcZftcTF12TgIGNfGwuUit3cZkd-Nr8D0L8TW-kM40FfqF3-4Z&quot;); background-position: 0px -188px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                                 <div class="post-text">Room</div>
+                             </div>
+                        </div>
+
+                        <div class="menu2-container">
+                            <div class="post-card">
+                               <div class="post-icon"> <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/89qWuy7Wq1R.png?_nc_eui2=AeGzje-_HVAjUFPzry706eZ_lVZpnGX7XEyVVmmcZftcTF12TgIGNfGwuUit3cZkd-Nr8D0L8TW-kM40FfqF3-4Z&quot;); background-position: 0px -167px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                                <div class="post-text">Page</div>
+                            </div>
+
+                            <div class="post-card">
+                                <div class="post-icon"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/89qWuy7Wq1R.png?_nc_eui2=AeGzje-_HVAjUFPzry706eZ_lVZpnGX7XEyVVmmcZftcTF12TgIGNfGwuUit3cZkd-Nr8D0L8TW-kM40FfqF3-4Z&quot;); background-position: 0px -797px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                                <div class="post-text">Ad</div>
+                             </div>
+
+                            <div class="post-card">
+                                <div class="post-icon"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/JdtNTQIgGvO.png?_nc_eui2=AeFwrd0FxZfvIwvsu7cVhTGJA5SeX0sgASoDlJ5fSyABKuOpQrbe7TrqMBu8p2WBiBBk7bqWeugmhp3a4iQoq8KT&quot;); background-position: 0px -248px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                                <div class="post-text">Group</div>
+                            </div>
+
+                            <div class="post-card">
+                                <div class="post-icon"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/89qWuy7Wq1R.png?_nc_eui2=AeGzje-_HVAjUFPzry706eZ_lVZpnGX7XEyVVmmcZftcTF12TgIGNfGwuUit3cZkd-Nr8D0L8TW-kM40FfqF3-4Z&quot;); background-position: 0px -293px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                                 <div class="post-text">Event</div>
+                             </div>
+
+                             <div class="post-card">
+                                <div class="post-icon"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/JdtNTQIgGvO.png?_nc_eui2=AeFwrd0FxZfvIwvsu7cVhTGJA5SeX0sgASoDlJ5fSyABKuOpQrbe7TrqMBu8p2WBiBBk7bqWeugmhp3a4iQoq8KT&quot;); background-position: 0px -668px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                                 <div class="post-text">Marketplace Listing</div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-tab" id="chat-card">
+            <div class="chat-card1">
+                <div class="chat-icon">
+                    <div class="chat-title">Chats</div>
+                    <div class="main-icon">
+                        <div class="items">
+                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/SrPSbtGPw_3.png?_nc_eui2=AeFTQfIUwG9mk30Qp4jvIVmVoK3XQkHa2w2grddCQdrbDaI37D26ZfwuCoWfiNN48oGyJWOE224-yNqq1IgonK6G&quot;); background-position: -84px -105px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <div class="items">
+                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/JdtNTQIgGvO.png?_nc_eui2=AeFwrd0FxZfvIwvsu7cVhTGJA5SeX0sgASoDlJ5fSyABKuOpQrbe7TrqMBu8p2WBiBBk7bqWeugmhp3a4iQoq8KT&quot;); background-position: 0px -626px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <div class="items">
+                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/89qWuy7Wq1R.png?_nc_eui2=AeGzje-_HVAjUFPzry706eZ_lVZpnGX7XEyVVmmcZftcTF12TgIGNfGwuUit3cZkd-Nr8D0L8TW-kM40FfqF3-4Z&quot;); background-position: 0px -188px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <div class="items">
+                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/89qWuy7Wq1R.png?_nc_eui2=AeGzje-_HVAjUFPzry706eZ_lVZpnGX7XEyVVmmcZftcTF12TgIGNfGwuUit3cZkd-Nr8D0L8TW-kM40FfqF3-4Z&quot;); background-position: 0px -1239px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search Messenger">
+                </div>
+
+                <div class="community-card">
+                    <div class="item inbox">
+                        <span>Inbox</span>
+                    </div>
+                    <div class="item">
+                        <span>Communities</span>
+                    </div>
+                </div>
+
+                <div class="msg-wrapper">
+                    <img src="rr.jpg" alt="">
+                    <div class="msg-card">
+                        <div class="msg-sender">Christiano Ronaldo</div>
+                        <div class="msg-text">Hi there! . 8m</div>
+                    </div>
+                </div>
+                <div class="msg-wrapper">
+                    <img src="gg.jpg" alt="">
+                    <div class="msg-card">
+                        <div class="msg-sender">Ben Edet</div>
+                        <div class="msg-text">am fine . 1hr</div>
+                    </div>
+                </div>
+                <div class="msg-wrapper">
+                    <img src="uu.jpg" alt="">
+                    <div class="msg-card">
+                        <div class="msg-sender">Johnson Adams</div>
+                        <div class="msg-text">i have a question . 2m</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-card2">
+               <a href="">See all in Messenger</a>
+            </div>
+        </div>
+
+        <div class="notification-tab" id="not-card">
+            <div class="chat-card1">
+                <div class="chat-icon">
+                    <div class="chat-title">Notifications</div>
+                    <div class="main-icon">
+                        <div class="items">
+                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/SrPSbtGPw_3.png?_nc_eui2=AeFTQfIUwG9mk30Qp4jvIVmVoK3XQkHa2w2grddCQdrbDaI37D26ZfwuCoWfiNN48oGyJWOE224-yNqq1IgonK6G&quot;); background-position: -84px -105px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="community-card">
+                    <div class="item inbox">
+                        <span>All</span>
+                    </div>
+                    <div class="item">
+                        <span>Unread</span>
+                    </div>
+                </div>
+
+                <div class="msg-wrapper">
+                    <div class="not-overlay">
+                        <img src="rr.jpg" alt="">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xl1xv1r" style="height: 28px; width: 28px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/ocBsNQPbn07.png?_nc_eui2=AeEQwwyJZr8IGldCMnb8bWN-YL_WSxkhCHhgv9ZLGSEIeE2ToXPke3eai0o6yEWl98kKG7tAdULCDUCJJr4EU1x3&quot;); background-position: 0px -812px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                   
+                    <div class="msg-card">
+                        <div class="msg-sender" id="not-sender"><strong>Christiano Ronaldo</strong> mentioned you and others in a comment in <strong>Goal.com</strong></div>
+                        <div class="msg-text" id="not-text">8minutes ago</div>
+                    </div>
+                </div>
+                <div class="msg-wrapper">
+                    <div class="not-overlay">
+                        <img src="gg.jpg" alt="">
+                        <img src="like.svg" id="like" alt="">
+                    </div>
+                    <div class="msg-card">
+                        <div class="msg-sender" id="not-sender"><strong>Ahmad Abdul</strong> likes your answer to a question</div>
+                        <div class="msg-text" id="not-text">3hours ago</div>
+                    </div>
+                </div>
+                <div class="msg-wrapper">
+                    <div class="not-overlay">
+                        <img src="ibom.jpg" id="over-img" alt="">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xl1xv1r" style="height: 28px; width: 28px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/ocBsNQPbn07.png?_nc_eui2=AeEQwwyJZr8IGldCMnb8bWN-YL_WSxkhCHhgv9ZLGSEIeE2ToXPke3eai0o6yEWl98kKG7tAdULCDUCJJr4EU1x3&quot;); background-position: 0px -812px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                    <div class="msg-card">
+                        <div class="msg-sender" id="not-sender"><strong>Juliet Sam</strong> replied to your comment.</div>
+                        <div class="msg-text" id="not-text">44minutes ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-tab" id="profile-card">
+            <div class="profile-wrapper">
+                <div class="profile-card1">
+                    <div class="sub-card1">
+                        <div class="profile-image-card">
+                            <img src="ibom.jpg" alt="">
+                            <div class="profile-title">Wisdom sam</div>
+                        </div>
+                        
+                        <i id="profile-icon-card">
+                            <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xfuq9xy x10w6t97 x1td3qas">
+                                <g fill-rule="evenodd" transform="translate(-446 -398)"><g fill-rule="nonzero"><path d="M96.628 206.613A7.97 7.97 0 0 1 96 203.5a7.967 7.967 0 0 1 2.343-5.657A7.978 7.978 0 0 1 104 195.5a7.978 7.978 0 0 1 5.129 1.86.75.75 0 0 0 .962-1.15A9.479 9.479 0 0 0 104 194a9.478 9.478 0 0 0-6.717 2.783A9.467 9.467 0 0 0 94.5 203.5a9.47 9.47 0 0 0 .747 3.698.75.75 0 1 0 1.381-.585zm14.744-6.226A7.97 7.97 0 0 1 112 203.5a7.967 7.967 0 0 1-2.343 5.657A7.978 7.978 0 0 1 104 211.5a7.978 7.978 0 0 1-5.128-1.86.75.75 0 0 0-.962 1.152A9.479 9.479 0 0 0 104 213a9.478 9.478 0 0 0 6.717-2.783 9.467 9.467 0 0 0 2.783-6.717 9.47 9.47 0 0 0-.747-3.698.75.75 0 1 0-1.381.585z" transform="translate(352 204.5)"></path><path d="M109.5 197h-2.25a.75.75 0 1 0 0 1.5h3a.75.75 0 0 0 .75-.75v-3a.75.75 0 1 0-1.5 0V197zm-11 13h2.25a.75.75 0 1 0 0-1.5h-3a.75.75 0 0 0-.75.75v3a.75.75 0 1 0 1.5 0V210z" transform="translate(352 204.5)"></path></g></g>
+                            </svg>
+                            <img class="p-img" src="uu.jpg" alt="">
+                        </i>
+                    </div>
+                    <div class="sub-card2"></div>
+                    <div class="sub-card3">
+                       <div class="see">see all profiles</div>
+                       <div class="num">2</div>
+                    </div>
+                </div>
+                <div class="profile-card2">
+                    <div class="option-card" onclick="show_privacy()">
+                        <div class="icon-wrapper">
+                            <div class="icons"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yh/r/aqsHN0pmZXC.png?_nc_eui2=AeGNvrC5e48jUnhG45JxkZ0dJI_iQbd7TNQkj-JBt3tM1IrQyxXdICPVMI5jb3XNOmWiPtWa5p37tID-mQ6toAt4&quot;); background-position: 0px -278px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                            <div class="icons-text">Settings & privacy</div>
+                        </div>
+                        <div class="right-icon"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/SrPSbtGPw_3.png?_nc_eui2=AeFTQfIUwG9mk30Qp4jvIVmVoK3XQkHa2w2grddCQdrbDaI37D26ZfwuCoWfiNN48oGyJWOE224-yNqq1IgonK6G&quot;); background-position: -108px -26px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                    </div>
+                    <div class="option-card">
+                        <div class="icon-wrapper">
+                            <div class="icons"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/KtMApmUESQZ.png?_nc_eui2=AeFAPApSVxjhG5VuVkCg9mczsSlUQ1LaZ_OxKVRDUtpn8yjeV3NJTQkGCPA7jyRJt8Gbuy9Gvq5HEV8r89vU-orC&quot;); background-position: 0px -343px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                            <div class="icons-text">Help & support</div>
+                        </div>
+                        <div class="right-icon"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/SrPSbtGPw_3.png?_nc_eui2=AeFTQfIUwG9mk30Qp4jvIVmVoK3XQkHa2w2grddCQdrbDaI37D26ZfwuCoWfiNN48oGyJWOE224-yNqq1IgonK6G&quot;); background-position: -108px -26px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                    </div>
+                    <div class="option-card">
+                        <div class="icon-wrapper">
+                            <div class="icons"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/Pw5bbsAuzYy.png?_nc_eui2=AeF5RQYZk-7c5OnWDrt9Bz-dfQCd1l4pSFR9AJ3WXilIVAOrVN2IV-ytNL0fXV4aL5kVFMgE_C32Eax1tPLxROzw&quot;); background-position: 0px -358px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                            <div class="icons-text">Display & accessibility</div>
+                        </div>
+                        <div class="right-icon"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/SrPSbtGPw_3.png?_nc_eui2=AeFTQfIUwG9mk30Qp4jvIVmVoK3XQkHa2w2grddCQdrbDaI37D26ZfwuCoWfiNN48oGyJWOE224-yNqq1IgonK6G&quot;); background-position: -108px -26px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                    </div>
+                </div>
+                <div class="profile-card3">
+                    <a href="">Privacy .</a>
+                    <a href="">Terms .</a>
+                    <a href="">Advertising .</a>
+                    <a href="" class="ads-icon">
+                        <span>Ad choices</span>
+                        <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/SrPSbtGPw_3.png?_nc_eui2=AeFTQfIUwG9mk30Qp4jvIVmVoK3XQkHa2w2grddCQdrbDaI37D26ZfwuCoWfiNN48oGyJWOE224-yNqq1IgonK6G&quot;); background-position: -13px -164px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"> .  </i>
+                    </a>
+                    
+                    <a href="">Cookies .</a>
+                    <a href="">More .</a>
+                    <a href="">Meta © 2023</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="settings-tab" id="settings-tab">
+            <div class="settings-container">
+                <div class="settings-card1">
+                    <div class="set-icon" onclick="hide_settings()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="settings-header">Settings & privacy</div>
+                </div>
+
+                <div class="settings-box">
+                    <div class="settings-box-icon">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yh/r/aqsHN0pmZXC.png?_nc_eui2=AeGNvrC5e48jUnhG45JxkZ0dJI_iQbd7TNQkj-JBt3tM1IrQyxXdICPVMI5jb3XNOmWiPtWa5p37tID-mQ6toAt4&quot;); background-position: 0px -278px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                    <div class="settings-title">Settings</div>
+                </div>
+                <div class="settings-box">
+                    <div class="settings-box-icon">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/KtMApmUESQZ.png?_nc_eui2=AeFAPApSVxjhG5VuVkCg9mczsSlUQ1LaZ_OxKVRDUtpn8yjeV3NJTQkGCPA7jyRJt8Gbuy9Gvq5HEV8r89vU-orC&quot;); background-position: 0px -301px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                    <div class="settings-title">Privacy Checkup</div>
+                </div>
+                <div class="settings-box">
+                    <div class="settings-box-icon">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/nOdbeNJreFf.png?_nc_eui2=AeGE1cZOz4CiX9msq2ywwdcQjgs23zcuaJiOCzbfNy5omH147tiqp1AR8dJCTVSQV78KG0zc_54039IebGjDmc13&quot;); background-position: 0px -288px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                    <div class="settings-title">Privacy Center</div>
+                </div>
+                <div class="settings-box">
+                    <div class="settings-box-icon">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yh/r/aqsHN0pmZXC.png?_nc_eui2=AeGNvrC5e48jUnhG45JxkZ0dJI_iQbd7TNQkj-JBt3tM1IrQyxXdICPVMI5jb3XNOmWiPtWa5p37tID-mQ6toAt4&quot;); background-position: -21px -215px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                    <div class="settings-title">Activity Log</div>
+                </div>
+                <div class="settings-box">
+                    <div class="settings-box-icon">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/KtMApmUESQZ.png?_nc_eui2=AeFAPApSVxjhG5VuVkCg9mczsSlUQ1LaZ_OxKVRDUtpn8yjeV3NJTQkGCPA7jyRJt8Gbuy9Gvq5HEV8r89vU-orC&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                    <div class="settings-title">Feed</div>
+                </div>
+                <div class="settings-box">
+                    <div class="settings-box-icon">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/2P4wytEjJFp.png?_nc_eui2=AeG5dTVnjtqzfToVZIwDEirHDtTjIxro_UQO1OMjGuj9RCFP9bZn3sEktKSGxBKhF9QPxsHgPI8xqhgo4X2cGvKY&quot;); background-position: 0px -650px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                    <div class="settings-title">Language</div>
+                </div>
+            </div>
+        </div>
+
+   </div>
+
+   <div class="body-wrapper">
+   <div class="body-container1">
+    <div class="sidebar-wrapper">
+        <div class="title-card">
+            <div class="title">Groups</div>
+            <div class="title-icon"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yh/r/aqsHN0pmZXC.png?_nc_eui2=AeGNvrC5e48jUnhG45JxkZ0dJI_iQbd7TNQkj-JBt3tM1IrQyxXdICPVMI5jb3XNOmWiPtWa5p37tID-mQ6toAt4&quot;); background-position: 0px -278px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+        </div>
+        <div class="group-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search groups">
+        </div>
+        <div class="feed-card">
+            <div class="feed-icon"><i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/hYy6oBAQHqs.png?_nc_eui2=AeGj8qDwX0GQhXPVB_8ZQRaI_EnNqEBB_IP8Sc2oQEH8g_9f2GBR7SyyP1ppFNAB8pUnRr_SqtGzyazjBSfW0KRQ&quot;); background-position: 0px -259px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+            <div class="feed-title">Your feed</div>
+        </div>
+
+        <div class="discover-card">
+            <div class="discover-icon"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/TPUU2JH1YO-.png?_nc_eui2=AeHIbGtZOyV_MuWAdA4-F3V72ZWXYA_5-urZlZdgD_n66lrbmx_uK0zPF3cGV1UOarwQOuddOpTSXDUysaHxouug&quot;); background-position: 0px -21px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+            <div class="discover-title">Discover</div>
+        </div>
+
+        <div class="create-group">
+            <i class="fa-solid fa-plus"></i>
+            <span>Create new group</span>
+        </div>
+    </div>
+    <div class="sidebar-wrapper2">
+        <div class="joined">Groups you've joined</div>
+        <div class="joined-wrapper">
+            <div class="joined-card1">
+                <img src="uu2.jpg" alt="">
+                <div class="joined-header-wrapper">
+                    <div class="joined-header">Upwork(For Only Upworkers)</div>
+                    <div class="joined-active">Last active 6 hours ago</div>
+                </div>
+
+            </div>
+            <div class="joined-card2">
+                <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/NrvgKzE5cUL.png?_nc_eui2=AeHO-wdaysDe7dG9wAxrawMbsqF-O-ys1SiyoX477KzVKFbJ9UEP2AQxiI5-fKOGvi_JzzXPz8Fx_QerrY7kiwWW&quot;); background-position: 0px -1304px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i>
+            </div>
+        </div>
+
+        <div class="joined-wrapper">
+            <div class="joined-card1">
+                <img src="reactjs.jpg" alt="">
+                <div class="joined-header-wrapper">
+                    <div class="joined-header">ReactJs Developers</div>
+                    <div class="joined-active">Last active 28 minutes ago</div>
+                </div>
+
+            </div>
+            <div class="joined-card2">
+                <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/NrvgKzE5cUL.png?_nc_eui2=AeHO-wdaysDe7dG9wAxrawMbsqF-O-ys1SiyoX477KzVKFbJ9UEP2AQxiI5-fKOGvi_JzzXPz8Fx_QerrY7kiwWW&quot;); background-position: 0px -1304px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i>
+            </div>
+        </div>
+        <div class="joined-wrapper">
+            <div class="joined-card1">
+                <img src="django.jpg" alt="">
+                <div class="joined-header-wrapper">
+                    <div class="joined-header">Django Developers Network</div>
+                    <div class="joined-active">Last active 43 minutes ago</div>
+                </div>
+
+            </div>
+            <div class="joined-card2">
+                <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/NrvgKzE5cUL.png?_nc_eui2=AeHO-wdaysDe7dG9wAxrawMbsqF-O-ys1SiyoX477KzVKFbJ9UEP2AQxiI5-fKOGvi_JzzXPz8Fx_QerrY7kiwWW&quot;); background-position: 0px -1304px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="body-container2">
+        <div class="container2-wrapper">
+            <div class="post-container">
+                <div class="group-container-x">
+                    <div class="group-card-x">
+                        <div class="group-fixed-x">
+                            <div class="suggested-x">
+                                <div class="title-x">Suggested for you</div>
+                            <a href="" class="see-all-x">See more</a>
+                            </div>
+                            <div class="suggested2-x">Groups you might be interested in.</div>
+            
+                           <div class="group-box-new">
+                             <div class="group-box-x">
+                                <div class="wraps-x">
+                                    <div class="box-wrapper-x">
+                                        <img class="group-img-x" src="uu2.jpg" alt="">
+                                        <div class="group-text-wrapper-x">
+                                            <div class="group-title-x">Upwork for Freelancers</div>
+                                            <div class="group-info-x">364K members • 10+ posts a day</div>
+            
+                                            <button class="join-group-x">Join group</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="group-box-x">
+                                <div class="wraps-x">
+                                    <div class="box-wrapper-x">
+                                        <img class="group-img-x" src="rr.jpg" alt="">
+                                        <div class="group-text-wrapper-x">
+                                            <div class="group-title-x">Rolando Fans</div>
+                                            <div class="group-info-x">924K members • 109+ posts a day</div>
+            
+                                            <button class="join-group-x">Join group</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="left-icon-x" onclick="plusSlides2(-1)">
+                                <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg>
+                            </div>
+                            <div class="right-icon-x" onclick="plusSlides2(1)">
+                                <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
+                            </div>
+                            <div class="img-x" id="img-x-1">
+                                <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                            </div>
+                            <div class="img-x" id="img-x-2">
+                                <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                            </div>
+                           </div> 
+                           <div class="group-box-new">
+                            <div class="group-box-x">
+                               <div class="wraps-x">
+                                   <div class="box-wrapper-x">
+                                       <img class="group-img-x" src="reactjs.jpg" alt="">
+                                       <div class="group-text-wrapper-x">
+                                           <div class="group-title-x">ReactJs Developers</div>
+                                           <div class="group-info-x">34K members • 20+ posts a day</div>
+           
+                                           <button class="join-group-x">Join group</button>
+                                       </div>
+                                       
+                                   </div>
+                               </div>
+                           </div>
+           
+                           <div class="group-box-x">
+                               <div class="wraps-x">
+                                   <div class="box-wrapper-x">
+                                       <img class="group-img-x" src="django.jpg" alt="">
+                                       <div class="group-text-wrapper-x">
+                                           <div class="group-title-x">Django Developers</div>
+                                           <div class="group-info-x">94K members • 109+ posts a day</div>
+           
+                                           <button class="join-group-x">Join group</button>
+                                       </div>
+                                       
+                                   </div>
+                               </div>
+                           </div>
+
+                           <div class="left-icon-x" onclick="plusSlides2(-1)">
+                               <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg>
+                           </div>
+                           <div class="right-icon-x" onclick="plusSlides2(1)">
+                               <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
+                           </div>
+                           <div class="img-x" id="img-x-1">
+                               <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                           </div>
+                           <div class="img-x" id="img-x-2">
+                               <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                           </div>
+                          </div> 
+                           
+                           <div class="group-box-new">
+                            <div class="group-box-x">
+                               <div class="wraps-x">
+                                   <div class="box-wrapper-x">
+                                       <img class="group-img-x" src="uu2.jpg" alt="">
+                                       <div class="group-text-wrapper-x">
+                                           <div class="group-title-x">Upwork for Freelancers</div>
+                                           <div class="group-info-x">364K members • 10+ posts a day</div>
+           
+                                           <button class="join-group-x">Join group</button>
+                                       </div>
+                                       
+                                   </div>
+                               </div>
+                           </div>
+           
+                           <div class="group-box-x">
+                               <div class="wraps-x">
+                                   <div class="box-wrapper-x">
+                                       <img class="group-img-x" src="rr.jpg" alt="">
+                                       <div class="group-text-wrapper-x">
+                                           <div class="group-title-x">Rolando Fans</div>
+                                           <div class="group-info-x">924K members • 109+ posts a day</div>
+           
+                                           <button class="join-group-x">Join group</button>
+                                       </div>
+                                       
+                                   </div>
+                               </div>
+                           </div>
+
+                           <div class="left-icon-x" onclick="plusSlides2(-1)">
+                               <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg>
+                           </div>
+                           <div class="right-icon-x" onclick="plusSlides2(1)">
+                               <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
+                           </div>
+                           <div class="img-x" id="img-x-1">
+                               <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                           </div>
+                           <div class="img-x" id="img-x-2">
+                               <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                           </div>
+                          </div>
+                                        
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-activity">Recent activity</div>
+                <div class="post-wrapper">
+                   <div class="post-card1">
+                    <div class="post-card1-a">
+                        <div class="card1-img">
+                            <img class="img1" src="chelsea.jpg" alt="">
+                            <img class="img2" src="will.jpg" alt="">
+                        </div>
+                        <div class="card1-text">
+                            <div class="title">Chelsea Football Club</div>
+                            <div class="author">
+                                <span>Will Zachinko . 1hr .</span>
+                                <span><svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1kpxq89 xsmyaan" title="Shared with Members of Chelsea Football Club"><title>Shared with Members of Chelsea Football Club</title><g fill-rule="evenodd" transform="translate(-448 -544)"><path d="M460.869 555c-.472 0-.41-.4-.41-.4 0-.786-.264-1.51-.708-2.1 0 0-.476-.5.033-.5 1.222 0 2.216.896 2.216 1.996 0 .554-.507 1.004-1.131 1.004zm-1.41-.094c0 .603-.514 1.094-1.146 1.094h-4.625c-.632 0-1.147-.491-1.147-1.094v-.306c0-1.434 1.22-2.6 2.722-2.6h1.474c1.501 0 2.722 1.166 2.722 2.6v.306zm-7.21-2.406a3.479 3.479 0 0 0-.708 2.1s.063.4-.41.4c-.624 0-1.13-.45-1.13-1.004 0-1.1.993-1.996 2.215-1.996.51 0 .033.5.033.5zm-.124-4c.684 0 1.125.49 1.125 1.25 0 .69-.504 1.25-1.125 1.25-.62 0-1.125-.56-1.125-1.25 0-.76.442-1.25 1.125-1.25zm3.875-1c.925 0 1.5.67 1.5 1.75 0 .965-.673 1.75-1.5 1.75s-1.5-.785-1.5-1.75c0-1.08.575-1.75 1.5-1.75zm3.875 1c.684 0 1.125.49 1.125 1.25 0 .69-.505 1.25-1.125 1.25s-1.125-.56-1.125-1.25c0-.76.442-1.25 1.125-1.25zM456 544c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"></path></g></svg></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-card1-b">
+                        <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+                    </div>
+                   </div>
+                   <div class="post-body">
+                        📸 - Ian Maatsen (20) this season: <br>
+                        🏟 21 Games <br>
+                        ⚽️ 4   Goals <br>
+                        🎯 4  Assists <br>
+                   </div>
+                   <div class="post-img">
+                    <img src="player.jpg" alt="">
+                   </div>
+                   <div class="comment-wrapper">
+                    <div class="reaction-card">
+                        <div class="likee-icon">
+                            <img src="like.svg" alt="">
+                            <div class="like-num">1.4M</div>
+                        </div>
+                        <div class="comment-num">2.6k comments</div>
+                    </div>
+                    <div class="more-reactions">
+                        <div class="more-like">
+                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -247px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="more-like">
+                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -209px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="more-like">
+                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/Z2YEYn_Ao6e.png?_nc_eui2=AeHCdGiWEvlPVLK6GZk8iAIB12BFnC1Gri_XYEWcLUauL2gkxFBM4eEcmMNeFGDBatYKMK4AUmEqCIBGTPcSLlrj&quot;); background-position: -100px -59px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                            <span>Send</span>
+                        </div>
+                    </div>
+                    <div class="top-comment">
+                        <span>Top comments</span>
+                        <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/Z2YEYn_Ao6e.png?_nc_eui2=AeHCdGiWEvlPVLK6GZk8iAIB12BFnC1Gri_XYEWcLUauL2gkxFBM4eEcmMNeFGDBatYKMK4AUmEqCIBGTPcSLlrj&quot;); background-position: -119px -147px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                    <div class="add-comment">
+                        <div class="add-img">
+                            <img src="gg.jpg" alt="">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Write a comment...">
+                            <i id="icon-1" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -302px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                            <i id="icon-2" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -438px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                            <i id="icon-3" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -370px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                            <i id="icon-4" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -472px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                            <i id="icon-5" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -625px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="post-wrapper">
+                    <div class="post-card1">
+                     <div class="post-card1-a">
+                         <div class="card1-img">
+                             <img class="img1" src="yorichi.jpg" alt="">
+                             <img class="img2" src="gg.jpg" alt="">
+                         </div>
+                         <div class="card1-text">
+                             <div class="title">YorochiTv Facebook Community</div>
+                             <div class="author">
+                                 <span>Steve Jose . 2hr .</span>
+                                 <span><svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1kpxq89 xsmyaan" title="Shared with Members of Chelsea Football Club"><title>Shared with Members of Chelsea Football Club</title><g fill-rule="evenodd" transform="translate(-448 -544)"><path d="M460.869 555c-.472 0-.41-.4-.41-.4 0-.786-.264-1.51-.708-2.1 0 0-.476-.5.033-.5 1.222 0 2.216.896 2.216 1.996 0 .554-.507 1.004-1.131 1.004zm-1.41-.094c0 .603-.514 1.094-1.146 1.094h-4.625c-.632 0-1.147-.491-1.147-1.094v-.306c0-1.434 1.22-2.6 2.722-2.6h1.474c1.501 0 2.722 1.166 2.722 2.6v.306zm-7.21-2.406a3.479 3.479 0 0 0-.708 2.1s.063.4-.41.4c-.624 0-1.13-.45-1.13-1.004 0-1.1.993-1.996 2.215-1.996.51 0 .033.5.033.5zm-.124-4c.684 0 1.125.49 1.125 1.25 0 .69-.504 1.25-1.125 1.25-.62 0-1.125-.56-1.125-1.25 0-.76.442-1.25 1.125-1.25zm3.875-1c.925 0 1.5.67 1.5 1.75 0 .965-.673 1.75-1.5 1.75s-1.5-.785-1.5-1.75c0-1.08.575-1.75 1.5-1.75zm3.875 1c.684 0 1.125.49 1.125 1.25 0 .69-.505 1.25-1.125 1.25s-1.125-.56-1.125-1.25c0-.76.442-1.25 1.125-1.25zM456 544c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"></path></g></svg></span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="post-card1-b">
+                         <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+                     </div>
+                    </div>
+                    <div class="post-body">
+                        Mark Zuckerberg Shares Photo with pregnant wife Priscilla Chan 
+                        Mark Zuckerberg and his wife Priscilla Chan are expecting their third child in 2023.
+                        The couple, who are college sweethearts and have been married since 2012, already have two daughters.
+                        In a post on social media, Zuckerberg shared a photo of the couple with Chan's baby bump.… See more
+                    </div>
+                    <div class="post-img">
+                     <img src="mark.jpg" alt="">
+                    </div>
+                    <div class="comment-wrapper">
+                     <div class="reaction-card">
+                         <div class="likee-icon">
+                             <img src="like.svg" alt="">
+                             <div class="like-num">1.4M</div>
+                         </div>
+                         <div class="comment-num">2.6k comments</div>
+                     </div>
+                     <div class="more-reactions">
+                         <div class="more-like">
+                             <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -247px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                             <span>Like</span>
+                         </div>
+                         <div class="more-like">
+                             <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -209px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                             <span>Comment</span>
+                         </div>
+                         <div class="more-like">
+                             <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/Z2YEYn_Ao6e.png?_nc_eui2=AeHCdGiWEvlPVLK6GZk8iAIB12BFnC1Gri_XYEWcLUauL2gkxFBM4eEcmMNeFGDBatYKMK4AUmEqCIBGTPcSLlrj&quot;); background-position: -100px -59px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                             <span>Send</span>
+                         </div>
+                     </div>
+                     <div class="top-comment">
+                         <span>Top comments</span>
+                         <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/Z2YEYn_Ao6e.png?_nc_eui2=AeHCdGiWEvlPVLK6GZk8iAIB12BFnC1Gri_XYEWcLUauL2gkxFBM4eEcmMNeFGDBatYKMK4AUmEqCIBGTPcSLlrj&quot;); background-position: -119px -147px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                     </div>
+                     <div class="add-comment">
+                         <div class="add-img">
+                             <img src="gg.jpg" alt="">
+                             <i class="fa-solid fa-circle"></i>
+                         </div>
+                         <div class="input-box">
+                             <input type="text" placeholder="Write a comment...">
+                             <i id="icon-1" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -302px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                             <i id="icon-2" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -438px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                             <i id="icon-3" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -370px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                             <i id="icon-4" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -472px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                             <i id="icon-5" data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -625px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                         </div>
+                     </div>
+                    </div>
+                 </div>
+                
+            </div>
+            <div class="group-container">
+                <div class="group-card">
+                    <div class="group-fixed">
+                        <div class="suggested">
+                            <div class="title">Suggested for you</div>
+                          <a href="" class="see-all">See more</a>
+                        </div>
+                        <div class="suggested2">Groups you might be interested in.</div>
+
+                        <div class="group-box">
+                            <div class="wraps">
+                                <div class="box-wrapper">
+                                    <img class="group-img" src="uu2.jpg" alt="">
+                                    <div class="group-text-wrapper">
+                                        <div class="group-title">Upwork for Freelancers</div>
+                                        <div class="group-info">364K members • 10+ posts a day</div>
+
+                                        <button class="join-group">Join group</button>
+                                    </div>
+                                    <div class="left-icon" onclick="plusSlides(-1)">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg>
+                                    </div>
+                                    <div class="right-icon" onclick="plusSlides(1)">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
+                                    </div>
+                                    <div class="img-x">
+                                        <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group-box">
+                            <div class="wraps">
+                                <div class="box-wrapper">
+                                    <img class="group-img" src="rr.jpg" alt="">
+                                    <div class="group-text-wrapper">
+                                        <div class="group-title">Rolando Fans</div>
+                                        <div class="group-info">924K members • 109+ posts a day</div>
+
+                                        <button class="join-group">Join group</button>
+                                    </div>
+                                    <div class="left-icon" onclick="plusSlides(-1)">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg>
+                                    </div>
+                                    <div class="right-icon" onclick="plusSlides(1)">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
+                                    </div>
+                                    <div class="img-x">
+                                        <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group-box">
+                            <div class="wraps">
+                                <div class="box-wrapper">
+                                    <img class="group-img" src="gg.jpg" alt="">
+                                    <div class="group-text-wrapper">
+                                        <div class="group-title">Fashion Designers</div>
+                                        <div class="group-info">24K members • 18+ posts a day</div>
+
+                                        <button class="join-group">Join group</button>
+                                    </div>
+                                    <div class="left-icon" onclick="plusSlides(-1)">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg>
+                                    </div>
+                                    <div class="right-icon" onclick="plusSlides(1)">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p"><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
+                                    </div>
+                                    <div class="img-x">
+                                        <i data-visualcompletion="css-img" class="x1b0d499 xaj1gnb" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/d0G-j1mcVDi.png?_nc_eui2=AeE4lR2Mj7A-C456d5AdsGfn1jglDLipyO3WOCUMuKnI7XUwVjo6gkUwzjKtVo-AD9GVpoAiHDW24l8D9yBHUKSi&quot;); background-position: 0px -196px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="mobile-header-wrapper">
+    <div class="mobile-header">
+        <div class="mobile-menu items"><span class="x1n2onr6"><svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor" height="28" width="28"><path d="M17.5 23.979 21.25 23.979C21.386 23.979 21.5 23.864 21.5 23.729L21.5 13.979C21.5 13.427 21.949 12.979 22.5 12.979L24.33 12.979 14.017 4.046 3.672 12.979 5.5 12.979C6.052 12.979 6.5 13.427 6.5 13.979L6.5 23.729C6.5 23.864 6.615 23.979 6.75 23.979L10.5 23.979 10.5 17.729C10.5 17.04 11.061 16.479 11.75 16.479L16.25 16.479C16.939 16.479 17.5 17.04 17.5 17.729L17.5 23.979ZM21.25 25.479 17 25.479C16.448 25.479 16 25.031 16 24.479L16 18.327C16 18.135 15.844 17.979 15.652 17.979L12.348 17.979C12.156 17.979 12 18.135 12 18.327L12 24.479C12 25.031 11.552 25.479 11 25.479L6.75 25.479C5.784 25.479 5 24.695 5 23.729L5 14.479 3.069 14.479C2.567 14.479 2.079 14.215 1.868 13.759 1.63 13.245 1.757 12.658 2.175 12.29L13.001 2.912C13.248 2.675 13.608 2.527 13.989 2.521 14.392 2.527 14.753 2.675 15.027 2.937L25.821 12.286C25.823 12.288 25.824 12.289 25.825 12.29 26.244 12.658 26.371 13.245 26.133 13.759 25.921 14.215 25.434 14.479 24.931 14.479L23 14.479 23 23.729C23 24.695 22.217 25.479 21.25 25.479Z"></path></svg></div>
+        <div class="friends items"><i class="fa-solid fa-user-group"></i></div>
+        <div class="mobile-chat items"><svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0" fill="currentColor" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path></svg></div>
+        <div class="mobile-tv items">
+            <div class="not-num">40</div>
+            <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6" fill="currentColor" height="28" width="28"><path d="M8.75 25.25C8.336 25.25 8 24.914 8 24.5 8 24.086 8.336 23.75 8.75 23.75L19.25 23.75C19.664 23.75 20 24.086 20 24.5 20 24.914 19.664 25.25 19.25 25.25L8.75 25.25ZM17.163 12.846 12.055 15.923C11.591 16.202 11 15.869 11 15.327L11 9.172C11 8.631 11.591 8.297 12.055 8.576L17.163 11.654C17.612 11.924 17.612 12.575 17.163 12.846ZM21.75 20.25C22.992 20.25 24 19.242 24 18L24 6.5C24 5.258 22.992 4.25 21.75 4.25L6.25 4.25C5.008 4.25 4 5.258 4 6.5L4 18C4 19.242 5.008 20.25 6.25 20.25L21.75 20.25ZM21.75 21.75 6.25 21.75C4.179 21.75 2.5 20.071 2.5 18L2.5 6.5C2.5 4.429 4.179 2.75 6.25 2.75L21.75 2.75C23.821 2.75 25.5 4.429 25.5 6.5L25.5 18C25.5 20.071 23.821 21.75 21.75 21.75Z"></path></svg>
+        </div>
+        <div class="mobile-notification items">
+            <svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0" fill="currentColor" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
+        </div>
+         <div class="mobile-group items"><svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt" fill="currentColor" height="28" width="28"><path d="M21.877 19 21.364 19C21.139 19 20.971 18.802 20.996 18.577 21.01 18.461 21.017 18.342 21.017 18.221L21.017 17.724C21.017 16.568 20.667 15.491 20.066 14.591 19.899 14.338 20.067 14 20.369 14L20.521 14C22.274 14 23.5 15.492 23.5 17.327 23.5 18.25 22.772 19 21.877 19ZM17.75 10.75C17.75 9.384 18.535 8.5 19.75 8.5 20.965 8.5 21.75 9.384 21.75 10.75 21.75 11.991 20.853 13 19.75 13 18.647 13 17.75 11.991 17.75 10.75ZM19.5 18.221C19.5 19.202 18.682 20 17.678 20L10.323 20C9.317 20 8.5 19.202 8.5 18.221L8.5 17.724C8.5 15.395 10.442 13.5 12.828 13.5L15.173 13.5C17.559 13.5 19.5 15.395 19.5 17.724L19.5 18.221ZM6.25 10.75C6.25 9.384 7.035 8.5 8.25 8.5 9.465 8.5 10.25 9.384 10.25 10.75 10.25 11.991 9.353 13 8.25 13 7.147 13 6.25 11.991 6.25 10.75ZM7.934 14.591C7.334 15.491 6.983 16.568 6.983 17.724L6.983 18.221C6.983 18.342 6.991 18.461 7.004 18.577 7.03 18.802 6.861 19 6.637 19L6.123 19C5.228 19 4.5 18.25 4.5 17.327 4.5 15.492 5.727 14 7.479 14L7.631 14C7.933 14 8.102 14.338 7.934 14.591ZM14 6C15.697 6 16.75 7.15 16.75 9 16.75 10.655 15.517 12 14 12 12.484 12 11.25 10.655 11.25 9 11.25 7.15 12.304 6 14 6ZM14 1C6.832 1 1 6.832 1 14 1 21.169 6.832 27 14 27 21.169 27 27 21.169 27 14 27 6.832 21.169 1 14 1Z"></path></svg></div>
+    </div>
+    <div class="mobile-tab">
+        <div class="title">Groups</div>
+        <div class="tab-icons">
+            <div class="items"><svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><g fill-rule="nonzero"><path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z" transform="translate(354.5 159.5)"></path><path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z" transform="translate(354.5 159.5)"></path></g></g></svg></div>
+            <div class="items"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
+    </div>
+    <div class="mobile-discover">
+        <div class="item" id="you">
+            <i class="fa-solid fa-user"></i>
+            <span>For you</span>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-users"></i>
+            <span>Your groups</span>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-compass"></i>
+            <span>Discover</span>
+        </div>
+        <div class="item">
+            <i class="fa-sharp fa-solid fa-envelope-open-text"></i>
+            <span>Discover</span>
+        </div>
+    </div>
+
+    <div class="mobile-joined">
+        <div class="mobile-joined-card">
+            <img src="reactjs.jpg" alt="">
+            <div class="title">ReactJs</div>
+        </div>
+        <div class="mobile-joined-card">
+            <img src="django.jpg" alt="">
+            <div class="title">Django</div>
+        </div>
+        <div class="mobile-joined-card">
+            <img src="yorichi.jpg" alt="">
+            <div class="title">YorochiTv</div>
+        </div>
+        <div class="mobile-joined-card">
+            <img src="rolando9.jpg" alt="">
+            <div class="title">Rolando</div>
+        </div>
+        <div class="mobile-joined-card">
+            <img src="chelsea.jpg" alt="">
+            <div class="title">Chelsea</div>
+        </div>
+        <div class="mobile-joined-card">
+            <img src="flutter.jpg" alt="">
+            <div class="title">Flutter</div>
+        </div>
+    </div>
+
+    <div class="post-container-x">
+        <div class="post-wrapper-x">
+            <div class="post-card1">
+             <div class="post-card1-a">
+                 <div class="card1-img">
+                     <img class="img1" src="chelsea.jpg" alt="">
+                     <img class="img2" src="will.jpg" alt="">
+                 </div>
+                 <div class="card1-text">
+                     <div class="title">Chelsea Football Club</div>
+                     <div class="author">
+                         <span>Will Zachinko . 1hr .</span>
+                         <span><svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1kpxq89 xsmyaan" title="Shared with Members of Chelsea Football Club"><title>Shared with Members of Chelsea Football Club</title><g fill-rule="evenodd" transform="translate(-448 -544)"><path d="M460.869 555c-.472 0-.41-.4-.41-.4 0-.786-.264-1.51-.708-2.1 0 0-.476-.5.033-.5 1.222 0 2.216.896 2.216 1.996 0 .554-.507 1.004-1.131 1.004zm-1.41-.094c0 .603-.514 1.094-1.146 1.094h-4.625c-.632 0-1.147-.491-1.147-1.094v-.306c0-1.434 1.22-2.6 2.722-2.6h1.474c1.501 0 2.722 1.166 2.722 2.6v.306zm-7.21-2.406a3.479 3.479 0 0 0-.708 2.1s.063.4-.41.4c-.624 0-1.13-.45-1.13-1.004 0-1.1.993-1.996 2.215-1.996.51 0 .033.5.033.5zm-.124-4c.684 0 1.125.49 1.125 1.25 0 .69-.504 1.25-1.125 1.25-.62 0-1.125-.56-1.125-1.25 0-.76.442-1.25 1.125-1.25zm3.875-1c.925 0 1.5.67 1.5 1.75 0 .965-.673 1.75-1.5 1.75s-1.5-.785-1.5-1.75c0-1.08.575-1.75 1.5-1.75zm3.875 1c.684 0 1.125.49 1.125 1.25 0 .69-.505 1.25-1.125 1.25s-1.125-.56-1.125-1.25c0-.76.442-1.25 1.125-1.25zM456 544c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"></path></g></svg></span>
+                     </div>
+                 </div>
+             </div>
+             <div class="post-card1-b">
+                 <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+             </div>
+            </div>
+            <div class="post-body">
+                 📸 - Ian Maatsen (20) this season: <br>
+                 🏟 21 Games <br>
+                 ⚽️ 4   Goals <br>
+                 🎯 4  Assists <br>
+            </div>
+            <div class="post-img">
+             <img src="player.jpg" alt="">
+            </div>
+            <div class="comment-wrapper">
+             <div class="reaction-card-x">
+                 <div class="likee-icon" id="likee-x">
+                     <img src="like.svg" alt="">
+                     <div class="like-num">1.4M</div>
+                 </div>
+                
+             </div>
+             <div class="more-reactions-x">
+                 <div class="more-like">
+                     <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -247px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>1.4M</span>
+                 </div>
+                 <div class="more-like">
+                     <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -209px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>2.6K</span>
+                 </div>
+                 <div class="more-like">
+                     <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/Z2YEYn_Ao6e.png?_nc_eui2=AeHCdGiWEvlPVLK6GZk8iAIB12BFnC1Gri_XYEWcLUauL2gkxFBM4eEcmMNeFGDBatYKMK4AUmEqCIBGTPcSLlrj&quot;); background-position: -100px -59px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>900K</span>
+                 </div>
+             </div>
+          
+            
+            </div>
+         </div>
+
+         <div class="post-wrapper-x">
+            <div class="post-card1">
+             <div class="post-card1-a">
+                 <div class="card1-img">
+                     <img class="img1" src="yorichi.jpg" alt="">
+                     <img class="img2" src="gg.jpg" alt="">
+                 </div>
+                 <div class="card1-text">
+                     <div class="title">YorochiTv Facebook Community</div>
+                     <div class="author">
+                         <span>Steve Jose . 2hr .</span>
+                         <span><svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1kpxq89 xsmyaan" title="Shared with Members of Chelsea Football Club"><title>Shared with Members of Chelsea Football Club</title><g fill-rule="evenodd" transform="translate(-448 -544)"><path d="M460.869 555c-.472 0-.41-.4-.41-.4 0-.786-.264-1.51-.708-2.1 0 0-.476-.5.033-.5 1.222 0 2.216.896 2.216 1.996 0 .554-.507 1.004-1.131 1.004zm-1.41-.094c0 .603-.514 1.094-1.146 1.094h-4.625c-.632 0-1.147-.491-1.147-1.094v-.306c0-1.434 1.22-2.6 2.722-2.6h1.474c1.501 0 2.722 1.166 2.722 2.6v.306zm-7.21-2.406a3.479 3.479 0 0 0-.708 2.1s.063.4-.41.4c-.624 0-1.13-.45-1.13-1.004 0-1.1.993-1.996 2.215-1.996.51 0 .033.5.033.5zm-.124-4c.684 0 1.125.49 1.125 1.25 0 .69-.504 1.25-1.125 1.25-.62 0-1.125-.56-1.125-1.25 0-.76.442-1.25 1.125-1.25zm3.875-1c.925 0 1.5.67 1.5 1.75 0 .965-.673 1.75-1.5 1.75s-1.5-.785-1.5-1.75c0-1.08.575-1.75 1.5-1.75zm3.875 1c.684 0 1.125.49 1.125 1.25 0 .69-.505 1.25-1.125 1.25s-1.125-.56-1.125-1.25c0-.76.442-1.25 1.125-1.25zM456 544c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"></path></g></svg></span>
+                     </div>
+                 </div>
+             </div>
+             <div class="post-card1-b">
+                 <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+             </div>
+            </div>
+            <div class="post-body">
+                Mark Zuckerberg Shares Photo with pregnant wife Priscilla Chan 
+                Mark Zuckerberg and his wife Priscilla Chan are expecting their third child in 2023.
+                The couple, who are college sweethearts and have been married since 2012, already have two daughters.
+                In a post on social media, Zuckerberg shared a photo of the couple with Chan's baby bump.… See more
+            </div>
+            <div class="post-img">
+             <img src="mark.jpg" alt="">
+            </div>
+            <div class="comment-wrapper">
+             <div class="reaction-card-x">
+                 <div class="likee-icon">
+                     <img src="like.svg" alt="">
+                     <div class="like-num">90K</div>
+                 </div>
+                 
+             </div>
+             <div class="more-reactions-x">
+                 <div class="more-like">
+                     <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -247px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>90K</span>
+                 </div>
+                 <div class="more-like">
+                     <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -209px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>200K</span>
+                 </div>
+                 <div class="more-like">
+                    <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -266px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>10K</span>
+                 </div>
+             </div>
+           
+           
+            </div>
+         </div>
+         <div class="post-wrapper-x">
+            <div class="post-card1">
+             <div class="post-card1-a">
+                 <div class="card1-img">
+                     <img class="img1" src="rolando9.jpg" alt="">
+                     <img class="img2" src="will.jpg" alt="">
+                 </div>
+                 <div class="card1-text">
+                     <div class="title">Al Nassar Fc</div>
+                     <div class="author">
+                         <span>S Kumar . 9hr .</span>
+                         <span><svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1kpxq89 xsmyaan" title="Shared with Members of Chelsea Football Club"><title>Shared with Members of Chelsea Football Club</title><g fill-rule="evenodd" transform="translate(-448 -544)"><path d="M460.869 555c-.472 0-.41-.4-.41-.4 0-.786-.264-1.51-.708-2.1 0 0-.476-.5.033-.5 1.222 0 2.216.896 2.216 1.996 0 .554-.507 1.004-1.131 1.004zm-1.41-.094c0 .603-.514 1.094-1.146 1.094h-4.625c-.632 0-1.147-.491-1.147-1.094v-.306c0-1.434 1.22-2.6 2.722-2.6h1.474c1.501 0 2.722 1.166 2.722 2.6v.306zm-7.21-2.406a3.479 3.479 0 0 0-.708 2.1s.063.4-.41.4c-.624 0-1.13-.45-1.13-1.004 0-1.1.993-1.996 2.215-1.996.51 0 .033.5.033.5zm-.124-4c.684 0 1.125.49 1.125 1.25 0 .69-.504 1.25-1.125 1.25-.62 0-1.125-.56-1.125-1.25 0-.76.442-1.25 1.125-1.25zm3.875-1c.925 0 1.5.67 1.5 1.75 0 .965-.673 1.75-1.5 1.75s-1.5-.785-1.5-1.75c0-1.08.575-1.75 1.5-1.75zm3.875 1c.684 0 1.125.49 1.125 1.25 0 .69-.505 1.25-1.125 1.25s-1.125-.56-1.125-1.25c0-.76.442-1.25 1.125-1.25zM456 544c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"></path></g></svg></span>
+                     </div>
+                 </div>
+             </div>
+             <div class="post-card1-b">
+                 <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+             </div>
+            </div>
+            <div class="post-body">
+                Soon..
+            </div>
+            <div class="post-img">
+             <img src="alnassar.jpg" alt="">
+            </div>
+            <div class="comment-wrapper">
+             <div class="reaction-card-x">
+                 <div class="likee-icon">
+                     <img src="like.svg" alt="">
+                     <div class="like-num">8M</div>
+                 </div>
+              
+             </div>
+             <div class="more-reactions-x">
+                 <div class="more-like">
+                     <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -247px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>8M</span>
+                 </div>
+                 <div class="more-like">
+                     <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/wgkwPxRtEuY.png?_nc_eui2=AeE8oYfXZj8xRAqUiOp7w00em7UpirYIGrmbtSmKtggauf-xbFHQUl_NZEipFa4EFR0Uy-t-JGd1h-A8uZtG4cqc&quot;); background-position: 0px -209px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>880K</span>
+                 </div>
+                 <div class="more-like">
+                     <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/Z2YEYn_Ao6e.png?_nc_eui2=AeHCdGiWEvlPVLK6GZk8iAIB12BFnC1Gri_XYEWcLUauL2gkxFBM4eEcmMNeFGDBatYKMK4AUmEqCIBGTPcSLlrj&quot;); background-position: -100px -59px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                     <span>200K</span>
+                 </div>
+             </div>
+            
+           
+            </div>
+         </div>
+         
+    </div>
+    <div class="loading-more">
+        <a href="">Loading more...</a>
+    </div>
+   </div>
+
+</body>
+<script src="index.js"></script>
+</html>
