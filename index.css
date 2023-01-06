@@ -10,6 +10,9 @@ html,body {
     margin: 0;
 }
 
+
+
+
 .logo{
     width: 50px;
     height: 50px;
@@ -32,6 +35,7 @@ html,body {
    
 } 
 
+
 .header-container .header-box1{
     display: flex;
     align-items: center;
@@ -48,9 +52,12 @@ html,body {
 
 .header-box2 .box2-card{
     padding: 13px 42px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
+.header-box2 .box2-card:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
 .header-box2 .menu{
     color: #385898;
     border-bottom: solid #385898 3px;
@@ -88,6 +95,7 @@ html,body {
     margin: 0 4px;
     border-radius: 50px;
     background-color: #E4E6EB;
+  
 }
 .profile img{
     border-radius: 50px;
@@ -101,11 +109,12 @@ html,body {
 
 .search-menu{
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: white;
+
     padding: 5px 10px;
-    top: 0;
-    z-index: 20;
+    top: 0px;
+    z-index: 201;
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2),inset 0 0 0 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -275,11 +284,11 @@ html,body {
 }
   
 .body-container1::-webkit-scrollbar-track {
-    background: #eee;
+    background: transparent;
 }
-  
+
 .body-container1::-webkit-scrollbar-thumb {
-    background: #CED0D4;
+    background:rgba(24, 119, 242, 0.2);
     border-radius: 5rem;
     
 }
@@ -300,7 +309,7 @@ html,body {
 
 .menu-tab .menu-card1{
     padding: 12px;
-    background-color: white;
+   
     border-radius: 14px;
     width: 60%;
     margin-right: 12px;
@@ -309,7 +318,6 @@ html,body {
 
 .menu-tab .menu-card2{
     box-shadow: 0 10px 10px -4px rgb(0 0 0 / 12%);
-    background-color: white;
     border-radius: 14px;
     width: 40%;
     padding: 10px;
@@ -576,7 +584,7 @@ html,body {
 
 
 .notification-tab{
-    position: absolute;
+    position: fixed;
     background-color: white;
     display: none;
     height: 300px;
@@ -769,7 +777,7 @@ html,body {
     width: 350px;
     height: 60vh;
     overflow-y: scroll;
-    position: absolute;
+    position: fixed;
     z-index: 208;
     right: 10px;
     top: 66px;
@@ -796,7 +804,7 @@ html,body {
 }
 
 .profile-wrapper .sub-card1:hover{
-    background-color: #F0F2F5;
+    background-color:rgba(0, 0, 0, 0.1);
 }
 
 .profile-wrapper .profile-image-card{
@@ -813,6 +821,7 @@ html,body {
     border-radius: 50px;
     object-fit: cover;
     margin-right: 10px;
+   
 }
 
 
@@ -845,7 +854,7 @@ html,body {
 
 
 .profile-wrapper .sub-card2{
-    border: solid #CED0D4 1px;
+    border: solid #F0F2F5 1px;
     margin: 4px 4px;
   
 }
@@ -875,7 +884,8 @@ html,body {
     font-size: 12px;
 }
 .profile-wrapper .sub-card3:hover{
-    background-color: #F0F2F5;
+    background-color: rgba(0, 0, 0, 0.1);
+
 }
 
 .profile-wrapper .profile-card2{
@@ -891,7 +901,7 @@ html,body {
     border-radius: 6px;
 }
 .profile-wrapper .profile-card2 .option-card:hover{
-    background-color: #E4E6EB;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .profile-wrapper .profile-card2 .icon-wrapper{
     display: flex;
@@ -1027,12 +1037,15 @@ html,body {
     scrollbar-color: transparent;
     bottom: 0;
     left: 0;
-    top: 66px;
+    top: 64px;
+    
+
 }
 
 .body-wrapper .sidebar-wrapper{
     border-bottom: solid #2ABBA7 1px;
     padding: 14px;
+   
 }
 
 .body-wrapper .sidebar-wrapper2{
@@ -1055,7 +1068,7 @@ html,body {
     cursor: pointer;
 }
 .sidebar-wrapper2 .joined-wrapper:hover{
-    background-color: #F0F2F5;
+    background-color:rgba(0, 0, 0, 0.05);
 }
 .sidebar-wrapper2 .joined-card1{
     display: flex;
@@ -1178,10 +1191,11 @@ html,body {
     justify-content: center;
     border-radius: 50px;
     background-color:#E4E6EB;
+   
 
 }
 .sidebar-wrapper .discover-card .discover-icon i{
-   background-color: white;
+  
 }
 
 .sidebar-wrapper .discover-card .discover-title{
@@ -1217,7 +1231,7 @@ html,body {
     left: 335px;
     right: 0;
     background-color: #F0F2F5;
-    top: 0px;
+    top: -10px;
     display: flex;
     justify-content: center;
 
@@ -1411,6 +1425,9 @@ html,body {
     justify-content: space-between;
     font-size: 14px;
     color: #65676B;
+ 
+}
+.reaction-color{
     border-bottom: solid #2ABBA7 1px;
 }
 
@@ -1591,6 +1608,154 @@ html,body {
     display: none;
 }
 
+
+.display-wrapper{
+    border-radius: 18px;
+    position: fixed;
+    height: 500px;
+    overflow-y: scroll;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    z-index: 209;
+    right: 20px;
+    top: 62px;
+    padding: 12px;
+    width: 350px;
+    background-color: white;
+    display: none;
+}
+
+#display-wrapper.hide{
+    display: block;
+}
+.display-wrapper .display-header{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-wrapper .display-header .d-arrow{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.display-wrapper .display-header .d-arrow:hover{
+    background-color:#E4E6EB;
+}
+
+.display-wrapper .display-header .title{
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.darkmode-container{
+    
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 6px 0;
+}
+
+
+.darkmode-container .dark-card .dark-title{
+    font-size: 19px;
+    font-weight: 900;
+}
+
+
+
+.darkmode-container .dark-card .dark-text{
+    font-size: 14px;
+    color:#65676B;
+}
+
+.darkmode-container .dark-card .dark-toggle{
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.darkmode-container .dark-card .dark-toggle:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.darkmode-container .dark-card .dark-toggle input{
+    border: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.darkmode-container .dark-card .dark-automatic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.darkmode-container .dark-automatic .title-bold{
+    font-weight: 900;
+}
+
+
+.darkmode-container .dark-automatic .title-bold{
+    font-weight: 900;
+}
+.darkmode-container .dark-automatic .title-p{
+    font-size: 14px;
+    color:#65676B;
+}
+
+
+.dark-automatic #auto{
+    border: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #00A400;
+}
+
+.darkmode-container .dark-icon{
+    width: 37px;
+    height: 37px;
+   
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #E4E6EB;
+}
+.keyboard-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.keyboard-wrapper:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.keyboard-wrapper .key-card1{
+    display: flex;
+    align-items: center;
+
+}
+
+.keyboard-wrapper .key-card1 .key-icon{
+   height: 37px;
+   width: 37px;
+
+   border-radius: 50px;
+   display: flex;
+   margin-right: 12px;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
 @media screen and (max-width:1200px){
     .group-container{display: none;}
         
